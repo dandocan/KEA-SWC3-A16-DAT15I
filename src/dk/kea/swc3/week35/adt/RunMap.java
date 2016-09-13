@@ -39,13 +39,14 @@ public class RunMap {
 
 
         // FIXME: 06-09-2016
+        StringBuilder result = new StringBuilder();
         grades.forEach((key, val) -> {
-            final String[] result = {key + ": "};
+            result.append(key + ": ");
             //result = key + ": ";
             val.forEach((name) -> {
-                result[0] += name + ", ";
+                result.append(name + ", ");
             });
-            System.out.println(result[0]);
+            System.out.println(result);
         });
 
     }
